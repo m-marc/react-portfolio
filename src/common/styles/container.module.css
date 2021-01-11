@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    position: relative;
+}
+
+.dFlex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

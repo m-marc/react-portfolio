@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #191d2b;
+    border-right: 1px solid #2e344e;
+    z-index: 10;
+    transition: all .4s ease-out;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    width: 260px;
+}
