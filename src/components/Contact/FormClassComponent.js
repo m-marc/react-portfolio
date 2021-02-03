@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import s from "./Contact.module.css";
 
-class Form extends Component {
+class FormClassComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -108,4 +108,4 @@ class Form extends Component {
     }
 }
 
-export default Form
+export default FormClassComponent

@@ -1,17 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
+import common from "../../common/styles/container.module.css"
+import s from "./Contact.module.css"
+import Form from "./ContactForm";
 
 const Contact = () => {
     return (
-        <div>
+        <div className={common.container}>
             <h2>Contact Me</h2>
+            <div className={s.wrapper}>
+                <div className={s["col-6"]}>
+                    <Form />
+                </div>
+                <div className={s["col-6"]}>
+                    <div className={s["contact-info"]}>
 
-            <h4>Get in Touch</h4>
-            <form action="">
-                <input type="text" name="yourName"/>
-                <input type="email" name="yourEmail"/>
-                <input type="text" name="yourSubject"/>
-                <textarea name="yourMsg" id="contactMsg" cols="30" rows="10">&nbsp;</textarea>
-            </form>
+                    </div>
+                </div>
+            </div>
 
         </div>
     )
