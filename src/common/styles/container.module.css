@@ -1,8 +1,10 @@
+body {
+    line-height: 1.8rem;
+}
 .container {
     width: 100%;
     max-width: 1240px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -11,9 +13,18 @@
     position: relative;
 }
 
-.dFlex {
+.d-flex-col {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-theme {
+    color: #037fff;
 }
