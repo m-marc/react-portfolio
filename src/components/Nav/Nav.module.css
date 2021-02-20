@@ -12,9 +12,9 @@
     display: block;
     padding: 5px 0;
     margin-bottom: 1px;
-    color: #a4acc4;
+    color: #ffffff;
     transition: all .4s ease-out;
-    font-weight: 600;
+    font-weight: 400;
     position: relative;
     overflow: hidden;
     z-index: 1;

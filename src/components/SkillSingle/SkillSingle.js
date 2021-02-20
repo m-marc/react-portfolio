@@ -1,14 +1,11 @@
 import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import s from "./SkillSingle.module.css"
-
 
 const SkillSingle = ({icon, title}) => {
-    return <div className={s.card}>
-        <div className={s.icon}>
-            <FontAwesomeIcon icon={icon} size="2x"/>
+    return <div className='skill-card glass-container'>
+        <div className='skill__icon'>
+            <img src={icon} alt={title}/>
         </div>
-        <h3 className={s.title}>{title}</h3>
+        <h3 className="skill__title">{title}</h3>
     </div>
 }
 

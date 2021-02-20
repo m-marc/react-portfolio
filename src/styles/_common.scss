@@ -1,0 +1,93 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8rem;
+  background: url("../common/img/background-main.png") center no-repeat;
+  background-size: cover;
+  color: $primary;
+  font-size: 18px;
+  font-weight: 300;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 40px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  position: relative;
+}
+
+.d-flex-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-theme {
+  color: $accent;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+h1 {
+  font-size: 3.2857rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.57rem;
+  line-height: 3.2857rem;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.71rem;
+  line-height: 2.43rem;
+}
+
+h5 {
+  font-size: 1.43rem;
+  line-height: 2.14rem;
+}
+
+h6 {
+  font-size: 1.14rem;
+  line-height: 1.857rem;
+}
+
+.wrapper {
+  padding-left: 280px;
+  position: relative;
+  min-height: calc(100vh - 40px);
+  z-index: 1;
+}
+
+.glass-container {
+  background-color: rgba(255,255,255, 0.06);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  box-shadow: 20px 20px 22px rgba(0,0,0, 0.2);
+  margin: 20px;
+  min-height: calc(100vh - 40px);
+}
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

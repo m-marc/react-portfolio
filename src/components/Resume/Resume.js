@@ -5,7 +5,14 @@ import common from "../../common/styles/container.module.css";
 import s from "./Resume.module.css";
 import ResumeItem from "../ResumeItem/ResumeItem";
 import SkillSingle from "../SkillSingle/SkillSingle";
-import {faCss3Alt, faHtml5, faJs, faReact, faSass} from "@fortawesome/free-brands-svg-icons";
+import html from "../../common/img/html.svg"
+import css from "../../common/img/css3.svg"
+import js from "../../common/img/javascript.svg"
+import ts from "../../common/img/typescript.svg"
+import sass from "../../common/img/sass.svg"
+import react from "../../common/img/react.svg"
+import git from "../../common/img/git.svg"
+import redux from "../../common/img/redux.svg"
 
 const Resume = () => {
     const experience = {
@@ -30,27 +37,35 @@ const Resume = () => {
         skills: [
             {
                 title: 'html',
-                icon: faHtml5,
+                icon: html,
             },
             {
                 title: 'css',
-                icon: faCss3Alt
-            },
-            {
-                title: 'js',
-                icon: faJs
-            },
-            {
-                title: 'react',
-                icon: faReact
+                icon: css
             },
             {
                 title: 'sass',
-                icon: faSass
+                icon: sass
+            },
+            {
+                title: 'js',
+                icon: js
             },
             {
                 title: 'TS',
-                icon: ""
+                icon: ts
+            },
+            {
+                title: 'react',
+                icon: react
+            },
+            {
+                title: 'Redux',
+                icon: redux
+            },
+            {
+                title: 'Git',
+                icon: git
             }
         ]
     }
@@ -58,19 +73,19 @@ const Resume = () => {
     const mappedSkills = experience.skills.map( ({title, icon}, i) => <SkillSingle key={`si-${i}`} title={title} icon={icon} />)
 
     return (
-        <div className={`${common.container}`}>
-            <h2>My skills</h2>
-            <div className={s.skillWrapper}>
+        <div className={`container`}>
+            <h2>Skills</h2>
+            <div className='skill-wrapper'>
                 {mappedSkills}
             </div>
 
             <h2>Resume</h2>
-            <div className={common["d-flex"]}>
-                <span className={s.icon}><FontAwesomeIcon icon={faBriefcase} size="2x"/></span>
+            <div className={"d-flex"}>
+                <span className="resume-icon"><FontAwesomeIcon icon={faBriefcase} size="2x"/></span>
                 <h4>Working experience</h4>
             </div>
             {/*{working experience}*/}
-            <div className={s.resumeWrapper}>
+            <div className="resume-wrapper">
                 {mappedJobs}
             </div>
             {/*{Education}*/}

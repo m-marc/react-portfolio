@@ -1,0 +1,17 @@
+.skill-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  position: relative;
+  min-height: unset;
+  padding: 10px 30px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.skill__title {
+  text-transform: uppercase;
+}

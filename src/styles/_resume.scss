@@ -1,0 +1,57 @@
+.resume-wrapper {
+  border-left: 3px solid #2e344e;
+}
+
+.resume-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.resume-single {
+  display: flex;
+  margin-top: 30px;
+  .summary {
+    flex: 0 0 220px;
+    max-width: 220px;
+    align-self: flex-start;
+    padding-left: 20px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: -9px;
+      top: 6px;
+      height: 15px;
+      width: 15px;
+      border-radius: 100px;
+      background: #10121b;
+      border: 3px solid #2e344e;
+    }
+  }
+  .year {
+    color: $primary;
+    margin-bottom: 0;
+  }
+
+  .details {
+    position: relative;
+    padding-left: 50px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 15px;
+      height: 1px;
+      width: 30px;
+      background: #2e344e;
+    }
+    h5 {
+      color: $accent;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    .company {
+      color: $primary;
+    }
+  }
+}

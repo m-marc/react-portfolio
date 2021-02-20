@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.scss';
 import Header from "./components/Header/Header";
 import React from "react";
 import {BrowserRouter, Route} from "react-router-dom";
@@ -13,11 +13,14 @@ function App() {
       <BrowserRouter>
           <div className="wrapper">
               <Header />
-              <Route exact path="/" component={Home}/>
-              <Route path="/resume" component={Resume} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/blog" component={Blog} />
-              <Route path="/contact" component={Contact} />
+              <div className={`glass-container`}>
+                  <Route exact path="/" component={Home}/>
+                  <Route path="/resume" component={Resume} />
+                  <Route path="/portfolio" component={Portfolio} />
+                  <Route path="/blog" component={Blog} />
+                  <Route path="/contact" component={Contact} />
+              </div>
+
           </div>
       </BrowserRouter>
   );

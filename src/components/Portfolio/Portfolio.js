@@ -1,12 +1,11 @@
 import React from "react";
-import common from "../../common/styles/container.module.css"
 import PortfolioItem from "../PortfolioItem/PortfolioItem";
 import portfolio from "./Portfolio.module.css"
 
 const Portfolio = () => {
     return (
         <div>
-            <div className={common.container}>
+            <div className={`glass-container container`}>
                 <h2>Portfolio</h2>
                 {/*list of projects*/}
                 <div className={portfolio.wrapper}>
