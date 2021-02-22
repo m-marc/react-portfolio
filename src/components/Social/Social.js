@@ -1,7 +1,7 @@
 import React from "react";
-import github from "../../common/img/github.svg"
-import upwork from "../../common/img/upwork.svg";
-import linkedin from "../../common/img/linkedin.svg"
+import github from "../../img/github.svg"
+import upwork from "../../img/upwork.svg";
+import linkedin from "../../img/linkedin.svg"
 
 const Social = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Contact.module.css"
-import Form from "./ContactForm";
+import {ContactForm} from "../../components/ContactForm/ContactForm";
 
 const Contact = () => {
     return (
@@ -8,7 +8,7 @@ const Contact = () => {
             <h2>Contact Me</h2>
             <div className={s.wrapper}>
                 <div className={s["col-6"]}>
-                    <Form />
+                    <ContactForm />
                 </div>
                 <div className={s["col-6"]}>
                     <div className={s["contact-info"]}>

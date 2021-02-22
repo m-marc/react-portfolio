@@ -1,5 +1,5 @@
 import React from "react";
-import Social from "../Social/Social";
+import Social from "../../components/Social/Social";
 import s from "./Home.module.css";
 
 const Home = () => {
