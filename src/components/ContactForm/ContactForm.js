@@ -1,4 +1,3 @@
-import s from "../../pages/Contact/Contact.module.css";
 import React from "react";
 import {Formik, Field, Form} from "formik"
 import {TextField} from '../TextField/TextField'
@@ -40,17 +39,16 @@ export const ContactForm = () => {
         }}
     >
         {({values, isSubmitting, errors, touched}) => (
-            <Form>
-                <Field label={"Enter your name *"} name="name" type="input" required as={TextField}/>
-                {errors.name && touched.name ? (<div>{errors.name}</div>) : null}
-                <Field label="Enter your email *" name="email" type="input" required as={TextField}/>
-                {errors.email && touched.email ? (<div>{errors.email}</div>) : null}
-                <Field label="Enter your subject *" name="subject" type="input" required as={TextField}/>
-                {errors.subject && touched.subject ? (<div>{errors.subject}</div>) : null}
-                <Field label="Enter your message *" name="message" type="textarea" required cols="30" rows="6" as={TextField}/>
-                {errors.message && touched.message ? (<div>{errors.message}</div>) : null}
-                <div className={s["form-field"]}>
-                    <button disabled={isSubmitting} type="submit" className={s.btn}>
+            <Form className="contact-form glass">
+                <Field placeholder={"Enter your name"} name="name" type="input" required as={TextField}/>
+                <Field placeholder="Enter your email" name="email" type="input" required as={TextField}/>
+                <Field placeholder="Enter your subject" name="subject" type="input" required as={TextField}/>
+                <Field placeholder="Enter your message" name="message" type="textarea" required cols="30" rows="6" as={TextField}/>
+                <div className="form-errors">
+                    {Object.keys(errors).length > 0 ? `Some error happened`: null}
+                </div>
+                <div className={"form-field"}>
+                    <button disabled={isSubmitting} type="submit" className={"btn"}>
                         Send Mail
                     </button>
                 </div>

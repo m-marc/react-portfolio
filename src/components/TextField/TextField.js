@@ -1,11 +1,9 @@
 import React from "react";
-import s from "../../pages/Contact/Contact.module.css";
 
 export const TextField = ({field, form, ...props}) => {
-    return <div className={s["form-field"]}>
-        <label htmlFor="name" className={s.label}>{props.label}</label>
+    return <div className={"form-field"}>
         {props.type === 'textarea'
-            ? <textarea className={s.textarea} {...field} {...props}> </textarea>
-            : <input className={s.input} {...field} {...props}/>}
+            ? <textarea className={"textarea"} {...field} {...props}> </textarea>
+            : <input className={"input"} {...field} {...props}/>}
     </div>
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 const SkillSingle = ({icon, title}) => {
-    return <div className='skill-card glass-container'>
+    return <div className='skill-card glass glass__dark'>
         <div className='skill__icon'>
             <img src={icon} alt={title}/>
         </div>
