@@ -11,8 +11,10 @@ const PortfolioItem = props => {
             <div className={s.backgroundImg} style={{backgroundImage: `url(${img})`}}>
                 <a href={link} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLink} /></a>
             </div>
-            <h5 className={s.title}>{title}</h5>
-            <p className={s.desc}>{desc}</p>
+            <div className="glass portfolio__content">
+                <h5 className={s.title}>{title}</h5>
+                <p className={s.desc}>{desc}</p>
+            </div>
         </div>
     )
 }

@@ -3,8 +3,6 @@ import {faBriefcase} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import ResumeItem from "../../components/ResumeItem/ResumeItem";
 import SkillSingle from "../../components/SkillSingle/SkillSingle";
-import html from "../../img/html.svg"
-import css from "../../img/css3.svg"
 import js from "../../img/javascript.svg"
 import ts from "../../img/typescript.svg"
 import sass from "../../img/sass.svg"
@@ -18,29 +16,26 @@ const Resume = () => {
             {
                 date: "Jun 2017 - Present",
                 jobTitle: "Frontend Developer",
-                companyName: "CodeArt",
-                description: "Lorem ipsum"
+                companyName: "Code Art",
+                description: "Collaborated with design and project developers to understand project scope and offer elegant, creative and scalable solutions;" +
+                    "Converted design assets into React components;" +
+                    "Provided timely resolution to reported website problems by integrating new solutions into existing platforms with React/JS."
             },
             {
                 date: "Mar 2016 - Dec 2016",
                 jobTitle: "Frontend Developer",
-                description: "Lorem ipsum"
+                companyName: "OWebSolutions, Tula",
+                description: "Applied knowledge of JavaScript and CSS to create successful websites;" +
+                    "Used programming capabilities in PHP and JavaScript and other libraries as needed"
             },
             {
                 date: "Apr 2015 - Feb 2016",
                 jobTitle: "Software Engineer",
-                description: "Lorem ipsum"
+                description: "Developed polling system for students in PHP from scratch;" +
+                    "Development and customization website of the Institute based on Joomla CMS and Bootstrap framework"
             },
         ],
         skills: [
-            {
-                title: 'html',
-                icon: html,
-            },
-            {
-                title: 'css',
-                icon: css
-            },
             {
                 title: 'sass',
                 icon: sass
@@ -67,11 +62,13 @@ const Resume = () => {
             }
         ]
     }
-    const mappedJobs = experience.jobs.map( (w,i) => <ResumeItem key={`ri-${i}`} date={w.date} job={w.jobTitle} company={w.companyName} desc={w.description}/>)
-    const mappedSkills = experience.skills.map( ({title, icon}, i) => <SkillSingle key={`si-${i}`} title={title} icon={icon} />)
+    const mappedJobs = experience.jobs.map( (w,i) =>
+        <ResumeItem key={`ri-${i}`} date={w.date} job={w.jobTitle} company={w.companyName} desc={w.description}/>)
+    const mappedSkills = experience.skills.map( ({title, icon}, i) =>
+        <SkillSingle key={`si-${i}`} title={title} icon={icon} />)
 
     return (
-        <div className={`container`}>
+        <div className={`container glass`}>
             <h2>Skills</h2>
             <div className='skill-wrapper'>
                 {mappedSkills}

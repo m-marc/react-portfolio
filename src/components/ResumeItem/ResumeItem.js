@@ -10,7 +10,7 @@ const ResumeItem = ({date, company, desc, job}) => {
             <div className="details">
                 <h5>{job}</h5>
                 <h6 className="company">{company}</h6>
-                <p>{desc}</p>
+                {desc.split(';').map( d => <p>- {d}</p>)}
             </div>
         </div>
     )

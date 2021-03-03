@@ -8,7 +8,7 @@ const Portfolio = () => {
             <div className={`glass-container container`}>
                 <h2>Portfolio</h2>
                 {/*list of projects*/}
-                <div className={portfolio.wrapper}>
+                <div className={`d-flex`}>
                     <PortfolioItem
                         title={"Futuredial.com"}
                         link={"https://www.futuredial.com/"}
