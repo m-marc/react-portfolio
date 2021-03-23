@@ -1,7 +1,7 @@
 import './styles/App.scss';
 import Header from "./components/Header/Header";
 import React from "react";
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {Routes} from "./components/Routes/Routes";
 import Particles from "react-particles-js";
 
@@ -11,7 +11,7 @@ const particlesOpt = {
             "value": 150,
             "density": {
                 "enable": true,
-                "value_area":800
+                "value_area": 800
             }
         },
         "move": {
@@ -22,13 +22,13 @@ const particlesOpt = {
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Particles className="particles" params={particlesOpt}/>
             <div className="wrapper">
                 <Header />
                 <Routes />
             </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

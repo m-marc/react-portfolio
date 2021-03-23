@@ -8,11 +8,11 @@ const Nav = () => {
             <NavLink to="/" className={s.link} exact activeClassName={s.active}>
                 <span>Home</span>
             </NavLink>
-            <NavLink to="/resume" className={s.link} activeClassName={s.active}>
-                <span>Resume</span>
+            <NavLink to="/experience" className={s.link} activeClassName={s.active}>
+                <span>Experience</span>
             </NavLink>
-            <NavLink to="/portfolio" className={s.link} activeClassName={s.active}>
-                <span>Portfolio</span>
+            <NavLink to="/projects" className={s.link} activeClassName={s.active}>
+                <span>Projects</span>
             </NavLink>
             <NavLink to="/blog" className={s.link} activeClassName={s.active}>
                 <span>Blog</span>

@@ -1,18 +1,55 @@
 import React from "react";
 import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
-import portfolio from "./Portfolio.module.css"
 
 const Portfolio = () => {
     return (
         <div>
             <div className={`glass-container container`}>
-                <h2>Portfolio</h2>
-                {/*list of projects*/}
+                <h2>Projects</h2>
                 <div className={`d-flex`}>
                     <PortfolioItem
-                        title={"Futuredial.com"}
+                        title={"Music player"}
+                        link={"#"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"Study cards"}
+                        link={"#"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"Todolist"}
+                        link={"#"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"Nanz Product cart"}
+                        link={"#"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"Chat template"}
+                        link={"#"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"FutureDial"}
                         link={"https://www.futuredial.com/"}
-                        img={"https://www.futuredial.com/wp-content/uploads/2019/10/futuredial-solutions-test-radi.jpg"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"Cards for Causes"}
+                        link={"https://www.cardsforcauses.com/"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"Rent My Florida"}
+                        link={"http://rentmyflorida.com/"}
+                        desc={"lorem ipsum"}
+                    />
+                    <PortfolioItem
+                        title={"OM Digital"}
+                        link={"https://omdigital.com/"}
                         desc={"lorem ipsum"}
                     />
                 </div>

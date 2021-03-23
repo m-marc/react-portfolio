@@ -31,8 +31,15 @@ const Resume = () => {
             {
                 date: "Apr 2015 - Feb 2016",
                 jobTitle: "Software Engineer",
+                companyName: "SprintSoft, Tula",
                 description: "Developed polling system for students in PHP from scratch;" +
                     "Development and customization website of the Institute based on Joomla CMS and Bootstrap framework"
+            },
+        ],
+        edu: [
+            {
+                date: "Sep 2010 - Jul 2015",
+                eduTitle: "Engineer's degree",
             },
         ],
         skills: [
@@ -68,21 +75,22 @@ const Resume = () => {
         <SkillSingle key={`si-${i}`} title={title} icon={icon} />)
 
     return (
-        <div className={`container glass`}>
-            <h2>Skills</h2>
-            <div className='skill-wrapper'>
-                {mappedSkills}
+        <div className={`container`}>
+            <div className="glass exp-wrapper">
+                <div className={"d-flex"}>
+                    <span className="resume-icon"><FontAwesomeIcon icon={faBriefcase} size="2x"/></span>
+                    <h4>Working experience</h4>
+                </div>
+                {/*{working experience}*/}
+                <div className="resume-wrapper">
+                    {mappedJobs}
+                </div>
             </div>
+            {/*<h2>Skills</h2>*/}
+            {/*<div className='skill-wrapper'>*/}
+            {/*    {mappedSkills}*/}
+            {/*</div>*/}
 
-            <h2>Resume</h2>
-            <div className={"d-flex"}>
-                <span className="resume-icon"><FontAwesomeIcon icon={faBriefcase} size="2x"/></span>
-                <h4>Working experience</h4>
-            </div>
-            {/*{working experience}*/}
-            <div className="resume-wrapper">
-                {mappedJobs}
-            </div>
             {/*{Education}*/}
         </div>
     )

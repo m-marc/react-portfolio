@@ -12,8 +12,8 @@ export const Routes = () => {
     const wrapperClass = match.isExact ? 'home' : ''
     return <main className={`wrapper__main ${wrapperClass}`}>
         <Route exact path="/" component={Home}/>
-        <Route path="/resume" component={Resume} />
-        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/experience" component={Resume} />
+        <Route path="/projects" component={Portfolio} />
         <Route path="/blog" component={Blog} />
         <Route path="/contact" component={Contact} />
     </main>
