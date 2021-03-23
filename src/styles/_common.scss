@@ -1,10 +1,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.8rem;
-  background: url("../img/bg2.jpg") center no-repeat;
-  background-size: cover;
+  background: linear-gradient(45deg, rgba(36,0,29,1) 0%, rgba(54,9,121,1) 35%, rgba(27,140,187,1) 70%, rgba(0,212,255,1) 100%);
   color: $primary;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
 }
 .container {
@@ -58,6 +57,7 @@ p {
 h1 {
   font-size: 3.2857rem;
   line-height: 4rem;
+  text-shadow: 2px 2px 4px rgba(1, 1, 1, .3);
 }
 
 h2 {
@@ -67,6 +67,7 @@ h2 {
   position: relative;
   padding-bottom: 15px;
   text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(1, 1, 1, .3);
 }
 
 h4 {
@@ -111,6 +112,21 @@ h6 {
   &__dark {
     background-color: rgba(1,1,1, 0.3);
   }
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .5;
+}
+
+.avatar {
+  border-radius: 50%;
+  box-shadow: 15px 15px 20px rgba(0,0,0, 0.4);
+  margin-bottom: 1rem;
 }
 
 *, :after, :before {
