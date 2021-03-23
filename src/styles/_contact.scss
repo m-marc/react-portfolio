@@ -65,28 +65,25 @@
     letter-spacing: 2px;
     height: 50px;
     line-height: 50px;
+    overflow: hidden;
     transition: all .4s ease-out;
 
     &:before {
       content: "";
       position: absolute;
-      left: 0;
+      left: -100%;
       top: 0;
       height: 100%;
       width: 100%;
-      background-image: linear-gradient(45deg, rgba(255,255,255, .03) 58%,
-        rgba(255,255,255, 0.3) 67%, transparent 68%);
-      background-position:  165% 0;
-      background-size: 200% 100%;
-      border-radius: 4px;
-      transition: .7s;
+      background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), transparent);
+      transition: .5s;
     }
     &:hover {
       color: #fff;
       box-shadow: 10px 10px 12px rgba(0,0,0, 0.2);
       transform: translateX(10px);
       &:before {
-        background-position: -20% 0;
+        left: 100%;
       }
     }
   }
