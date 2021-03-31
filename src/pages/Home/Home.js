@@ -1,6 +1,6 @@
 import React from "react";
 import Social from "../../components/Social/Social";
-import me from "../../img/profile.jpg";
+import me from "../../img/avatar_3.jpg";
 import TypingEffect from "react-typing-effect";
 
 const Home = () => {
