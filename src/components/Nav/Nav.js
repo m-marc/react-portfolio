@@ -14,9 +14,9 @@ const Nav = () => {
             <NavLink to="/projects" className={s.link} activeClassName={s.active}>
                 <span>Projects</span>
             </NavLink>
-            <NavLink to="/blog" className={s.link} activeClassName={s.active}>
-                <span>Blog</span>
-            </NavLink>
+            {/*<NavLink to="/blog" className={s.link} activeClassName={s.active}>*/}
+            {/*    <span>Blog</span>*/}
+            {/*</NavLink>*/}
             <NavLink to="/contact" className={s.link} activeClassName={s.active}>
                 <span>Contact</span>
             </NavLink>
