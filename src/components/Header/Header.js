@@ -16,8 +16,6 @@ const Header = () => {
                         ? <FontAwesomeIcon icon={faTimes} size="2x" color="white"/>
                         : <FontAwesomeIcon icon={faBars} size="2x" color="white"/>
                     }
-
-
                 </button>
                 <Nav />
             </div>
