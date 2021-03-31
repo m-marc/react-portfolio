@@ -17,16 +17,17 @@ const Resume = () => {
                 date: "Jun 2017 - Present",
                 jobTitle: "Frontend Developer",
                 companyName: "Code Art",
-                description: "Collaborated with design and project developers to understand project scope and offer elegant, creative and scalable solutions;" +
-                    "Converted design assets into React components;" +
-                    "Provided timely resolution to reported website problems by integrating new solutions into existing platforms with React/JS."
+                description: "Building stable and maintainable codebase using React;" +
+                    "Working directly with client stakeholders to develop technical solutions for business cases;" +
+                    "Creating new features, functionality, and capabilities on eCommerce sites using JavaScript, PHP, and SASS"
             },
             {
                 date: "Mar 2016 - Dec 2016",
                 jobTitle: "Frontend Developer",
                 companyName: "OWebSolutions, Tula",
                 description: "Applied knowledge of JavaScript and CSS to create successful websites;" +
-                    "Used programming capabilities in PHP and JavaScript and other libraries as needed"
+                    "Implementing a mobile-first approach to existing websites;" +
+                    "Creating modular, responsive templates using modern CSS techniques and JavaScript libraries"
             },
             {
                 date: "Apr 2015 - Feb 2016",

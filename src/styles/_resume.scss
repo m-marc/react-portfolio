@@ -1,5 +1,5 @@
 .resume-wrapper {
-  border-left: 3px solid #2e344e;
+  border-left: 3px solid $primary;
 }
 
 .resume-icon {
@@ -24,8 +24,8 @@
       height: 15px;
       width: 15px;
       border-radius: 100px;
-      background: #10121b;
-      border: 3px solid #2e344e;
+      background: $accent;
+      border: 3px solid $primary;
     }
   }
   .year {
@@ -43,12 +43,13 @@
       top: 15px;
       height: 1px;
       width: 30px;
-      background: #2e344e;
+      background: $primary;
     }
     h5 {
       color: $accent;
       margin-bottom: 0;
       font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(1, 1, 1, .3);
     }
     .company {
       color: $primary;
