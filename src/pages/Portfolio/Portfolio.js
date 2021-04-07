@@ -10,47 +10,56 @@ const Portfolio = () => {
                     <PortfolioItem
                         title={"Music player"}
                         link={"#"}
-                        desc={"lorem ipsum"}
+                        desc={"Simple music player"}
+                        stack={"React, TS, Redux, MaterialUI"}
                     />
                     <PortfolioItem
                         title={"Study cards"}
                         link={"#"}
-                        desc={"lorem ipsum"}
+                        desc={"Team pet-project"}
+                        stack={"React, TS, Redux"}
                     />
                     <PortfolioItem
                         title={"Todolist"}
                         link={"#"}
-                        desc={"lorem ipsum"}
+                        desc={"Simple todolist pet-project"}
+                        stack={"React, TS, Redux, MaterialUI, Storybook, RestAPI"}
                     />
                     <PortfolioItem
                         title={"Nanz Product cart"}
                         link={"#"}
-                        desc={"lorem ipsum"}
+                        desc={"Custom product cart on React"}
+                        stack={"React, TS, Redux"}
                     />
                     <PortfolioItem
                         title={"Chat template"}
                         link={"#"}
-                        desc={"lorem ipsum"}
+                        desc={"PSD to HTML"}
+                        stack={"HTML, SCSS"}
                     />
                     <PortfolioItem
                         title={"FutureDial"}
                         link={"https://www.futuredial.com/"}
-                        desc={"lorem ipsum"}
+                        desc={"PSD to WordPress"}
+                        stack={"JS, PHP, SCSS, Bootstrap, WordPress"}
                     />
                     <PortfolioItem
                         title={"Cards for Causes"}
                         link={"https://www.cardsforcauses.com/"}
-                        desc={"lorem ipsum"}
+                        desc={"PSD to BigCommerce"}
+                        stack={"React, JS, PHP, SCSS, Bootstrap, BigCommerce"}
                     />
                     <PortfolioItem
                         title={"Rent My Florida"}
                         link={"http://rentmyflorida.com/"}
-                        desc={"lorem ipsum"}
+                        desc={"PSD to WordPress"}
+                        stack={"VueJS, RestAPI, PHP, JS, SCSS, Bootstrap, WordPress"}
                     />
                     <PortfolioItem
                         title={"OM Digital"}
                         link={"https://omdigital.com/"}
-                        desc={"lorem ipsum"}
+                        desc={"PSD to WordPress"}
+                        stack={"JS, PHP, SCSS, Bootstrap, WordPress"}
                     />
                 </div>
 

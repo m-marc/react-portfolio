@@ -8,8 +8,14 @@
     font-weight: 700;
   }
   .item-desc {
-    color: #a4acc4;
+    color: #e1e8fb;
     margin-bottom: 0;
+  }
+  .item-stack {
+    font-style: italic;
+    font-size: .75rem;
+    text-align: right;
+    margin-top: .5rem;
   }
 }
 
@@ -17,6 +23,8 @@
   width: 100%;
   cursor: pointer;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
   &:hover {
     .portfolio__img {
       &:before {
