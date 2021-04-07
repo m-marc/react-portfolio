@@ -1,14 +1,5 @@
 import React from "react";
-import {faBriefcase} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import ResumeItem from "../../components/ResumeItem/ResumeItem";
-import SkillSingle from "../../components/SkillSingle/SkillSingle";
-import js from "../../img/javascript.svg"
-import ts from "../../img/typescript.svg"
-import sass from "../../img/sass.svg"
-import react from "../../img/react.svg"
-import git from "../../img/git.svg"
-import redux from "../../img/redux.svg"
 
 const Resume = () => {
     const experience = {
@@ -48,58 +39,19 @@ const Resume = () => {
                 date: "Sep 2010 - Jul 2015",
                 eduTitle: "Engineer's degree",
             },
-        ],
-        skills: [
-            {
-                title: 'sass',
-                icon: sass
-            },
-            {
-                title: 'js',
-                icon: js
-            },
-            {
-                title: 'TS',
-                icon: ts
-            },
-            {
-                title: 'react',
-                icon: react
-            },
-            {
-                title: 'Redux',
-                icon: redux
-            },
-            {
-                title: 'Git',
-                icon: git
-            }
         ]
     }
     const mappedJobs = experience.jobs.map( (w,i) =>
         <ResumeItem key={`ri-${i}`} date={w.date} job={w.jobTitle} company={w.companyName} desc={w.description}/>)
-    const mappedSkills = experience.skills.map( ({title, icon}, i) =>
-        <SkillSingle key={`si-${i}`} title={title} icon={icon} />)
 
     return (
         <div className={`container`}>
             <h2>Working experience</h2>
             <div className="glass exp-wrapper">
-                {/*<div className={"row"}>*/}
-                {/*    <span className="resume-icon"><FontAwesomeIcon icon={faBriefcase} size="2x"/></span>*/}
-                {/*    <h4>Working experience</h4>*/}
-                {/*</div>*/}
-                {/*{working experience}*/}
                 <div className="resume-wrapper">
                     {mappedJobs}
                 </div>
             </div>
-            {/*<h2>Skills</h2>*/}
-            {/*<div className='skill-wrapper'>*/}
-            {/*    {mappedSkills}*/}
-            {/*</div>*/}
-
-            {/*{Education}*/}
         </div>
     )
 }
