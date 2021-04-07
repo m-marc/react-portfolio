@@ -2,6 +2,8 @@ import React from "react";
 import {Formik, Field, Form} from "formik"
 import {TextField} from '../TextField/TextField'
 import * as yup from 'yup'
+import axios from "axios";
+import {live} from "../../axios.js";
 
 const validationSchema = yup.object().shape({
     name: yup.string()
@@ -30,21 +32,30 @@ export const ContactForm = () => {
             message: ""
         }}
         validationSchema={validationSchema}
-        onSubmit={(data, {setSubmitting, resetForm}) => {
-            setSubmitting(true);
-            //async stuff here
-            setSubmitting(false)
-            resetForm()
+        onSubmit={async (data, {setSubmitting, resetForm, setStatus}) => {
+            setStatus("Sending...")
+            try {
+                setSubmitting(true)
+                await axios.post(live,{data})
+                setStatus("Your message was sent successfully")
+                setSubmitting(false)
+                setTimeout(resetForm, 1000)
+            } catch (e) {
+                e && setStatus("Network error")
+            }
         }}
     >
-        {({isSubmitting, errors}) => (
+        {({isSubmitting, status}) => (
             <Form className="contact-form glass">
                 <Field placeholder="Enter your name" name="name" type="input" required as={TextField}/>
                 <Field placeholder="Enter your email" name="email" type="email" required as={TextField}/>
                 <Field placeholder="Enter your subject" name="subject" type="input" required as={TextField}/>
                 <Field placeholder="Enter your message" name="message" type="textarea" required cols="30" rows="6" as={TextField}/>
+                <div className={`form-status ${status === "Network error" ? 'error' : ''}`}>
+                    {status}
+                </div>
                 <div className={"form-field"}>
-                    <button disabled={isSubmitting || !!errors} type="submit" className={"btn"}>
+                    <button disabled={isSubmitting} type="submit" className={"btn"}>
                         Send Mail
                     </button>
                 </div>

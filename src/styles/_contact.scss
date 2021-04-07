@@ -17,6 +17,18 @@
     font-size: .8rem;
     line-height: 1.4;
   }
+  .form-status {
+    min-height: 28px;
+    color: #00c7b5;
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 1rem;
+    &.error {
+      color: #ec5050;
+    }
+  }
   .label {
     position: relative;
     transition: all .4s ease-out;
