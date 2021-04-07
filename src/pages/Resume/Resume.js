@@ -22,6 +22,12 @@ const Resume = () => {
                     "Creating new features, functionality, and capabilities on eCommerce sites using JavaScript, PHP, and SASS"
             },
             {
+                date: "Mar 2017 - May 2017",
+                jobTitle: "Software Engineer",
+                companyName: "SprintSoft, Tula",
+                description: "Study and development Retail Modern Point of Sale based on Microsoft Dynamics AX 2012 R3 with C# and TypeScript"
+            },
+            {
                 date: "Mar 2016 - Dec 2016",
                 jobTitle: "Frontend Developer",
                 companyName: "OWebSolutions, Tula",
@@ -32,7 +38,7 @@ const Resume = () => {
             {
                 date: "Apr 2015 - Feb 2016",
                 jobTitle: "Software Engineer",
-                companyName: "SprintSoft, Tula",
+                companyName: "IPK, Tula",
                 description: "Developed polling system for students in PHP from scratch;" +
                     "Development and customization website of the Institute based on Joomla CMS and Bootstrap framework"
             },
@@ -77,11 +83,12 @@ const Resume = () => {
 
     return (
         <div className={`container`}>
+            <h2>Working experience</h2>
             <div className="glass exp-wrapper">
-                <div className={"d-flex"}>
-                    <span className="resume-icon"><FontAwesomeIcon icon={faBriefcase} size="2x"/></span>
-                    <h4>Working experience</h4>
-                </div>
+                {/*<div className={"row"}>*/}
+                {/*    <span className="resume-icon"><FontAwesomeIcon icon={faBriefcase} size="2x"/></span>*/}
+                {/*    <h4>Working experience</h4>*/}
+                {/*</div>*/}
                 {/*{working experience}*/}
                 <div className="resume-wrapper">
                     {mappedJobs}

@@ -1,4 +1,54 @@
+@media only screen and (max-width: 991px) {
+  .resume-single {
+    flex-wrap: wrap;
+    .details:before {
+      left: 3px;
+      top: -15px;
+      width: 12px;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .exp-wrapper {
+    padding: 10px 20px 30px 30px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .home_col {
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .typing-text {
+      font-size: 1rem;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .portfolio__wrapper {
+    width: 50%;
+  }
+  .container {
+    padding: 20px 30px;
+  }
+}
+
 @media (min-width: 992px) {
+  .portfolio__wrapper {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+  .resume-single {
+    .details {
+      padding-left: 50px;
+    }
+  }
+  .col-6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
   .header-toggle {
     display: none;
   }
@@ -9,6 +59,6 @@
     padding-left: 280px;
   }
   h2 {
-
+    margin-top: 0;
   }
 }

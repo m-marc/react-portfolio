@@ -10,6 +10,7 @@ const Home = () => {
                 <img src={me} alt="this is me" width={150} className="avatar"/>
                 <h1><strong className={"color-theme"}>Max Marchenkov</strong></h1>
                 <TypingEffect
+                    className={"typing-text"}
                     text={["I'm a Front-End developer."]}
                     speed={200}
                     typingDelay={700}/>

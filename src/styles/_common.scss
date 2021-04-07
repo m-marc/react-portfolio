@@ -12,7 +12,7 @@ body {
 .container {
   width: 100%;
   max-width: 1240px;
-  padding: 20px 40px;
+  padding: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,8 +22,8 @@ body {
 }
 
 .col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 auto;
+  width: 100%;
   padding: 0 15px;
 }
 
@@ -40,6 +40,8 @@ body {
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }

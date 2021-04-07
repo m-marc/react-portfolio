@@ -6,7 +6,7 @@ const Portfolio = () => {
         <div>
             <div className={`glass-container container`}>
                 <h2>Projects</h2>
-                <div className={`d-flex`}>
+                <div className={`row`}>
                     <PortfolioItem
                         title={"Music player"}
                         link={"#"}

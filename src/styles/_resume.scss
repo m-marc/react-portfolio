@@ -35,7 +35,7 @@
 
   .details {
     position: relative;
-    padding-left: 50px;
+    padding-left: 20px;
     &:before {
       content: "";
       position: absolute;
@@ -58,5 +58,5 @@
 }
 
 .exp-wrapper {
-  padding: 30px 40px;
+  padding: 10px 40px 30px 40px;
 }
