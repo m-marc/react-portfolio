@@ -3,20 +3,19 @@
   position: relative;
 
   .form-field {
-    margin-top: 20px;
+    margin-top: 15px;
     position: relative;
     &:nth-child(1) {
       margin-top: 0;
     }
   }
-  .form-errors {
-    min-height: 28px;
-    background-color: #d42020;
-    display: inline-block;
-    border-radius: 4px;
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
+  .form-field-error {
+    height: 17px;
+    margin-left: 10px;
+    display: block;
+    color: #ff5a5a;
+    font-size: .8rem;
+    line-height: 1.4;
   }
   .label {
     position: relative;
@@ -52,7 +51,6 @@
   }
   .btn {
     position: relative;
-    cursor: pointer;
     padding: 0 30px;
     background: $accent;
     border: 0;
@@ -68,22 +66,25 @@
     overflow: hidden;
     transition: all .4s ease-out;
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: -100%;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), transparent);
-      transition: .5s;
-    }
-    &:hover {
-      color: #fff;
-      box-shadow: 10px 10px 12px rgba(0,0,0, 0.2);
-      transform: translateX(10px);
+    &:not(:disabled) {
+      cursor: pointer;
       &:before {
-        left: 100%;
+        content: "";
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, .5), transparent);
+        transition: .5s;
+      }
+      &:hover {
+        color: #fff;
+        box-shadow: 10px 10px 12px rgba(0,0,0, 0.2);
+        transform: translateX(10px);
+        &:before {
+          left: 100%;
+        }
       }
     }
   }
